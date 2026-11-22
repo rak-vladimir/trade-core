@@ -57,7 +57,7 @@ services:
         image: nginx:stable-alpine
 
         ports:
-            - "80:80"
+            - "127.0.0.1:80:80"
 
         volumes:
             - ..:/var/www/html:ro
@@ -84,7 +84,7 @@ services:
             - ..:/var/www/html
 
         ports:
-            - "5173:5173"
+            - "127.0.0.1:5173:5173"
 
         command:
             - npm
@@ -100,7 +100,7 @@ services:
         image: postgres:19-alpine
 
         ports:
-            - "${DB_FORWARD_PORT:-5433}:5432"
+            - "127.0.0.1:${DB_FORWARD_PORT:-5433}:5432"
 
         environment:
             POSTGRES_DB: ${DB_DATABASE:-trade_core}
@@ -147,8 +147,7 @@ services:
         image: axllent/mailpit:latest
 
         ports:
-            - "8025:8025"
-            - "1025:1025"
+            - "127.0.0.1:8025:8025"
 
         restart: unless-stopped
 

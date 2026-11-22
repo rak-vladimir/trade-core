@@ -48,9 +48,14 @@ RUN apk add --no-cache --virtual .build-deps \
 # Composer
 COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
 
+ENV HOME=/home/app \
+    COMPOSER_HOME=/home/app/.composer
+
 # Application user
 RUN addgroup -g "${GID}" -S app \
-    && adduser -u "${UID}" -S -D -H -G app app
+    && adduser -u "${UID}" -S -D -H -G app app \
+    && mkdir -p "${COMPOSER_HOME}" \
+    && chown -R app:app "${HOME}"
 
 WORKDIR /var/www/html
 
