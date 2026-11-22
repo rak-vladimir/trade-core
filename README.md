@@ -174,7 +174,7 @@ cp .env.example .env
 
 ```dotenv
 APP_NAME=TradeCore
-APP_URL=http://localhost:8080
+APP_URL=http://localhost
 
 DB_CONNECTION=pgsql
 DB_HOST=database
