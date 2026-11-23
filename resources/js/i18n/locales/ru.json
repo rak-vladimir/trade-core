@@ -1,0 +1,37 @@
+{
+    "app": {
+        "name": "TradeCore",
+        "description": "Система управления товарами, складами и заказами"
+    },
+    "navigation": {
+        "dashboard": "Панель управления",
+        "catalog": "Каталог товаров",
+        "categories": "Категории",
+        "products": "Товары",
+        "warehouses": "Склады",
+        "inventory": "Остатки",
+        "orders": "Заказы",
+        "customers": "Клиенты",
+        "settings": "Настройки"
+    },
+    "actions": {
+        "create": "Создать",
+        "edit": "Редактировать",
+        "delete": "Удалить",
+        "save": "Сохранить",
+        "cancel": "Отмена",
+        "search": "Поиск",
+        "filter": "Фильтр",
+        "reset": "Сбросить",
+        "back": "Назад",
+        "close": "Закрыть",
+        "confirm": "Подтвердить"
+    },
+    "common": {
+        "loading": "Загрузка...",
+        "noData": "Нет данных",
+        "success": "Операция успешно выполнена",
+        "error": "Произошла ошибка",
+        "language": "Язык"
+    }
+}

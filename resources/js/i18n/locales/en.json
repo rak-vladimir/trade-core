@@ -1,0 +1,37 @@
+{
+    "app": {
+        "name": "TradeCore",
+        "description": "Inventory and Order Management System"
+    },
+    "navigation": {
+        "dashboard": "Dashboard",
+        "catalog": "Product Catalog",
+        "categories": "Categories",
+        "products": "Products",
+        "warehouses": "Warehouses",
+        "inventory": "Inventory",
+        "orders": "Orders",
+        "customers": "Customers",
+        "settings": "Settings"
+    },
+    "actions": {
+        "create": "Create",
+        "edit": "Edit",
+        "delete": "Delete",
+        "save": "Save",
+        "cancel": "Cancel",
+        "search": "Search",
+        "filter": "Filter",
+        "reset": "Reset",
+        "back": "Back",
+        "close": "Close",
+        "confirm": "Confirm"
+    },
+    "common": {
+        "loading": "Loading...",
+        "noData": "No data available",
+        "success": "Operation completed successfully",
+        "error": "Something went wrong",
+        "language": "Language"
+    }
+}
