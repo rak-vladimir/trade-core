@@ -26,7 +26,7 @@
         "back": "Back",
         "close": "Close",
         "confirm": "Confirm",
-        "back_to_dashboard": "Вернуться на главную"
+        "back_to_dashboard": "Back to dashboard"
     },
     "common": {
         "loading": "Loading...",
@@ -36,6 +36,6 @@
         "language": "Language"
     },
     "errors": {
-        "page_not_found": "Страница не найдена"
+        "page_not_found": "Page not found"
     }
 }
