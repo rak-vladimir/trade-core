@@ -25,7 +25,8 @@
         "reset": "Reset",
         "back": "Back",
         "close": "Close",
-        "confirm": "Confirm"
+        "confirm": "Confirm",
+        "back_to_dashboard": "Вернуться на главную"
     },
     "common": {
         "loading": "Loading...",
@@ -33,5 +34,8 @@
         "success": "Operation completed successfully",
         "error": "Something went wrong",
         "language": "Language"
+    },
+    "errors": {
+        "page_not_found": "Страница не найдена"
     }
 }

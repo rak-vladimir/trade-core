@@ -9,7 +9,7 @@
     <!-- Styles / Scripts -->
     @vite('resources/js/app.ts')
 </head>
-<body>
-<div id="app"></div>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+<div id="app"/>
 </body>
 </html>

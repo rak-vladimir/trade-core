@@ -25,7 +25,8 @@
         "reset": "Сбросить",
         "back": "Назад",
         "close": "Закрыть",
-        "confirm": "Подтвердить"
+        "confirm": "Подтвердить",
+        "back_to_dashboard": "Back to dashboard"
     },
     "common": {
         "loading": "Загрузка...",
@@ -33,5 +34,8 @@
         "success": "Операция успешно выполнена",
         "error": "Произошла ошибка",
         "language": "Язык"
+    },
+    "errors": {
+        "page_not_found": "Страница не найдена"
     }
 }
