@@ -13,9 +13,7 @@ interface UseFilterOptions<TFilters extends FilterParams> {
     onChange?: (params: FilterParams) => void;
 }
 
-export function useFilter<TFilters extends FilterParams = FilterParams>(
-    options: UseFilterOptions<TFilters> = {},
-) {
+export function useFilter<TFilters extends FilterParams = FilterParams>(options: UseFilterOptions<TFilters> = {}) {
     const search = ref(options.initialSearch ?? '');
     const page = ref(options.initialPage ?? 1);
     const perPage = ref(options.initialPerPage ?? 15);

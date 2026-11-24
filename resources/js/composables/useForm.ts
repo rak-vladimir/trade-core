@@ -4,7 +4,7 @@ import type { AxiosResponse } from 'axios';
 import api from '@/services/api';
 import { ApiError } from '@/services/api-errors';
 
-type FormData = Record<string, unknown>;
+type FormData = object;
 type FormMethod = 'post' | 'put' | 'patch' | 'delete';
 type FormTransform<T extends FormData> = (data: Partial<T>) => unknown;
 

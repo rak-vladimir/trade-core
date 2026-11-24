@@ -20,18 +20,11 @@ export class ApiError extends Error {
 
 export function normalizeApiError(error: unknown): ApiError {
     if (!axios.isAxiosError<ApiErrorResponse>(error)) {
-        return new ApiError(
-            error instanceof Error ? error.message : 'An unexpected error occurred.',
-        );
+        return new ApiError(error instanceof Error ? error.message : 'An unexpected error occurred.');
     }
 
     const status = error.response?.status;
     const responseData = error.response?.data;
 
-    return new ApiError(
-        responseData?.message ?? error.message ?? 'An unexpected error occurred.',
-        status,
-        responseData?.errors ?? {},
-        error.code,
-    );
+    return new ApiError(responseData?.message ?? error.message ?? 'An unexpected error occurred.', status, responseData?.errors ?? {}, error.code);
 }
