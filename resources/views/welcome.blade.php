@@ -6,10 +6,9 @@
 
     <title>{{ config('app.name', 'TradeCore') }}</title>
 
-    <!-- Styles / Scripts -->
     @vite('resources/js/app.ts')
 </head>
-<body class="min-h-screen bg-gray-50 text-gray-900">
-<div id="app"/>
+<body>
+    <div id="app"/>
 </body>
 </html>
