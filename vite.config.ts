@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import laravel from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
 import tailwindcss from '@tailwindcss/vite';
@@ -39,5 +39,10 @@ export default defineConfig({
         watch: {
             ignored: ['**/storage/framework/views/**', '**/vendor/**'],
         },
+    },
+    test: {
+        environment: 'jsdom',
+        clearMocks: true,
+        include: ['resources/js/**/*.test.ts'],
     },
 });
