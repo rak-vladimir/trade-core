@@ -1,0 +1,55 @@
+{
+    "app": {
+        "name": "TradeCore",
+        "description": "Система управления товарами, складами и заказами"
+    },
+    "auth": {
+        "login": {
+            "title": "Вход в систему",
+            "description": "Войдите в свою учётную запись TradeCore",
+            "email": "Электронная почта",
+            "password": "Пароль",
+            "submit": "Войти",
+            "errors": {
+                "sessionCheck": "Не удалось проверить текущую сессию. Проверьте подключение к серверу."
+            }
+        },
+        "logout": "Выйти"
+    },
+    "navigation": {
+        "dashboard": "Панель управления",
+        "catalog": "Каталог товаров",
+        "categories": "Категории",
+        "products": "Товары",
+        "warehouses": "Склады",
+        "inventory": "Остатки",
+        "orders": "Заказы",
+        "customers": "Клиенты",
+        "settings": "Настройки"
+    },
+    "actions": {
+        "create": "Создать",
+        "edit": "Редактировать",
+        "delete": "Удалить",
+        "save": "Сохранить",
+        "cancel": "Отмена",
+        "search": "Поиск",
+        "filter": "Фильтр",
+        "reset": "Сбросить",
+        "back": "Назад",
+        "close": "Закрыть",
+        "confirm": "Подтвердить",
+        "back_to_dashboard": "Back to dashboard"
+    },
+    "common": {
+        "loading": "Загрузка...",
+        "noData": "Нет данных",
+        "success": "Операция успешно выполнена",
+        "error": "Произошла ошибка",
+        "language": "Язык"
+    },
+    "errors": {
+        "page_not_found": "Страница не найдена",
+        "network": "Не удалось связаться с сервером. Проверьте подключение."
+    }
+}

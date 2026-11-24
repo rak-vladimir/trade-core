@@ -1,0 +1,55 @@
+{
+    "app": {
+        "name": "TradeCore",
+        "description": "Inventory and Order Management System"
+    },
+    "auth": {
+        "login": {
+            "title": "Sign in",
+            "description": "Sign in to your TradeCore account",
+            "email": "Email address",
+            "password": "Password",
+            "submit": "Sign in",
+            "errors": {
+                "sessionCheck": "Unable to verify your current session. Please check your connection to the server."
+            }
+        },
+        "logout": "Log out"
+    },
+    "navigation": {
+        "dashboard": "Dashboard",
+        "catalog": "Product Catalog",
+        "categories": "Categories",
+        "products": "Products",
+        "warehouses": "Warehouses",
+        "inventory": "Inventory",
+        "orders": "Orders",
+        "customers": "Customers",
+        "settings": "Settings"
+    },
+    "actions": {
+        "create": "Create",
+        "edit": "Edit",
+        "delete": "Delete",
+        "save": "Save",
+        "cancel": "Cancel",
+        "search": "Search",
+        "filter": "Filter",
+        "reset": "Reset",
+        "back": "Back",
+        "close": "Close",
+        "confirm": "Confirm",
+        "back_to_dashboard": "Back to dashboard"
+    },
+    "common": {
+        "loading": "Loading...",
+        "noData": "No data available",
+        "success": "Operation completed successfully",
+        "error": "Something went wrong",
+        "language": "Language"
+    },
+    "errors": {
+        "page_not_found": "Page not found",
+        "network": "Unable to connect to the server. Please check your connection."
+    }
+}
