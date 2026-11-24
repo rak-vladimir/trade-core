@@ -5,9 +5,7 @@ import ru from './locales/ru.json';
 
 const savedLocale = localStorage.getItem('trade-core:locale');
 
-const locale = savedLocale === 'en' || savedLocale === 'ru'
-    ? savedLocale
-    : 'ru';
+const locale = savedLocale === 'en' || savedLocale === 'ru' ? savedLocale : 'ru';
 
 const i18n = createI18n({
     legacy: false,

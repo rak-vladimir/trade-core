@@ -20,9 +20,7 @@ export function useFilter<TFilters extends FilterParams = FilterParams>(
     const page = ref(options.initialPage ?? 1);
     const perPage = ref(options.initialPerPage ?? 15);
     const sortBy = ref<string | null>(options.initialSortBy ?? null);
-    const sortDirection = ref<SortDirection>(
-        options.initialSortDirection ?? 'asc',
-    );
+    const sortDirection = ref<SortDirection>(options.initialSortDirection ?? 'asc');
 
     const filters = reactive({
         ...options.initialFilters,
@@ -35,9 +33,9 @@ export function useFilter<TFilters extends FilterParams = FilterParams>(
         per_page: perPage.value,
         ...(sortBy.value
             ? {
-                sort_by: sortBy.value,
-                sort_direction: sortDirection.value,
-            }
+                  sort_by: sortBy.value,
+                  sort_direction: sortDirection.value,
+              }
             : {}),
     }));
 
@@ -51,11 +49,7 @@ export function useFilter<TFilters extends FilterParams = FilterParams>(
         Object.assign(filters, options.initialFilters ?? {});
     }
 
-    watch(
-        queryParams,
-        (params) => options.onChange?.(params),
-        { deep: true },
-    );
+    watch(queryParams, (params) => options.onChange?.(params), { deep: true });
 
     return {
         search,

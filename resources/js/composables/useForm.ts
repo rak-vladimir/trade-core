@@ -6,9 +6,7 @@ import { ApiError } from '@/services/api-errors';
 
 type FormData = Record<string, unknown>;
 type FormMethod = 'post' | 'put' | 'patch' | 'delete';
-type FormTransform<T extends FormData> = (
-    data: Partial<T>,
-) => unknown;
+type FormTransform<T extends FormData> = (data: Partial<T>) => unknown;
 
 export function useForm<T extends FormData>(initialData: T) {
     const data = reactive(structuredClone(initialData)) as T;
@@ -99,10 +97,7 @@ export function useForm<T extends FormData>(initialData: T) {
     /**
      * Submit form.
      */
-    async function submit(
-        method: FormMethod,
-        url: string,
-    ): Promise<AxiosResponse<unknown>> {
+    async function submit(method: FormMethod, url: string): Promise<AxiosResponse<unknown>> {
         processing.value = true;
 
         clearErrors();

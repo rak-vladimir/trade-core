@@ -16,9 +16,7 @@ function setLocale(locale: Locale): void {
     <div class="flex min-h-dvh flex-col bg-gray-50 text-gray-900">
         <header class="shrink-0 border-b border-gray-200 bg-white">
             <nav class="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-6">
-                <span class="text-xl font-semibold tracking-tight">
-                    TradeCore
-                </span>
+                <span class="text-xl font-semibold tracking-tight"> TradeCore </span>
 
                 <div
                     class="flex items-center gap-1"
@@ -33,10 +31,12 @@ function setLocale(locale: Locale): void {
                         v-for="locale in ['ru', 'en'] as const"
                         :key="locale"
                         type="button"
-                        class="rounded px-3 py-1.5 text-sm font-medium transition-colors cursor-pointer"
-                        :class="currentLocale === locale
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-600 hover:bg-gray-100'"
+                        class="cursor-pointer rounded px-3 py-1.5 text-sm font-medium transition-colors"
+                        :class="
+                            currentLocale === locale
+                                ? 'bg-gray-900 text-white'
+                                : 'text-gray-600 hover:bg-gray-100'
+                        "
                         :aria-pressed="currentLocale === locale"
                         @click="setLocale(locale)"
                     >
@@ -46,10 +46,8 @@ function setLocale(locale: Locale): void {
             </nav>
         </header>
 
-        <main
-            class="mx-auto flex w-full max-w-7xl flex-1 flex-col px-6 py-8"
-        >
-            <RouterView/>
+        <main class="mx-auto flex w-full max-w-7xl flex-1 flex-col px-6 py-8">
+            <RouterView />
         </main>
     </div>
 </template>
