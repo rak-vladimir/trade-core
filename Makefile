@@ -10,7 +10,7 @@ export LOCAL_GID
 
 .DEFAULT_GOAL := help
 
-.PHONY: help config build up down restart ps logs \
+.PHONY: init help config build up down restart ps logs \
 	shell bash artisan composer composer-install \
 	npm npm-install key migrate seed fresh test
 
@@ -18,6 +18,11 @@ help: ## Show available commands
 	@grep -E '^[a-zA-Z_-]+:.*## .*$$' $(MAKEFILE_LIST) \
 		| sort \
 		| sed -E 's/:.*## / - /'
+
+init:
+	$(COMPOSE) up -d
+	$(MAKE) artisan ARGS="app:init"
+	$(MAKE) npm ARGS="run build"
 
 config: ## Validate Docker Compose configuration
 	$(COMPOSE) config
