@@ -1,4 +1,42 @@
 {
+    "units": {
+        "piece": {
+            "name": "Piece",
+            "symbol": "pcs."
+        },
+        "kilogram": {
+            "name": "Kilogram",
+            "symbol": "kg"
+        },
+        "gram": {
+            "name": "Gram",
+            "symbol": "g"
+        },
+        "liter": {
+            "name": "Liter",
+            "symbol": "L"
+        },
+        "meter": {
+            "name": "Meter",
+            "symbol": "m"
+        },
+        "square_meter": {
+            "name": "Square meter",
+            "symbol": "m²"
+        },
+        "cubic_meter": {
+            "name": "Cubic meter",
+            "symbol": "m³"
+        },
+        "pack": {
+            "name": "Pack",
+            "symbol": "pack"
+        },
+        "box": {
+            "name": "Box",
+            "symbol": "box"
+        }
+    },
     "app": {
         "name": "TradeCore",
         "description": "Inventory and Order Management System"

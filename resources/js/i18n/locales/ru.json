@@ -1,4 +1,42 @@
 {
+    "units": {
+        "piece": {
+            "name": "Штука",
+            "symbol": "шт."
+        },
+        "kilogram": {
+            "name": "Килограмм",
+            "symbol": "кг"
+        },
+        "gram": {
+            "name": "Грамм",
+            "symbol": "г"
+        },
+        "liter": {
+            "name": "Литр",
+            "symbol": "л"
+        },
+        "meter": {
+            "name": "Метр",
+            "symbol": "м"
+        },
+        "square_meter": {
+            "name": "Квадратный метр",
+            "symbol": "м²"
+        },
+        "cubic_meter": {
+            "name": "Кубический метр",
+            "symbol": "м³"
+        },
+        "pack": {
+            "name": "Упаковка",
+            "symbol": "уп."
+        },
+        "box": {
+            "name": "Коробка",
+            "symbol": "кор."
+        }
+    },
     "app": {
         "name": "TradeCore",
         "description": "Система управления товарами, складами и заказами"

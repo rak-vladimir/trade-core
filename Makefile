@@ -82,4 +82,4 @@ fresh: ## Recreate database structure and run seeders
 	$(COMPOSE) exec --user app app php artisan migrate:fresh --seed
 
 test: ## Run Laravel tests
-	$(COMPOSE) exec --user app app php artisan test
+	$(COMPOSE) exec --user app app sh -lc 'php artisan config:clear && DB_DATABASE=trade_core_test APP_ENV=testing php artisan test'
